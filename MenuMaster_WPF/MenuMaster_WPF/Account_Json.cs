@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuMaster_WPF
 {
-    internal class Account_Json
+    public class Account_Json
     {
         public string Username { get; set; }
         public string Nama_Awal { get; set; }
