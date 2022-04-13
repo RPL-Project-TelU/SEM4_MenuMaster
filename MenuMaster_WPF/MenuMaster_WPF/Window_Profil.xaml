@@ -1,0 +1,16 @@
+﻿<Window x:Class="MenuMaster_WPF.Window_Profil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuMaster_WPF"
+        mc:Ignorable="d"
+        Title="Window_Profil" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="153" Margin="68,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Nama" HorizontalAlignment="Left" Margin="259,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="259,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="259,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Gambar_profil" Content="Gambar Profil&#xD;&#xA;" HorizontalAlignment="Left" Margin="105,105,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
