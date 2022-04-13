@@ -7,14 +7,20 @@
         mc:Ignorable="d"
         Title="RegistrasiWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,43,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,74,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,109,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,140,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,206,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,241,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="65,272,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nama Awal" HorizontalAlignment="Left" Margin="65,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nama Akhir" HorizontalAlignment="Left" Margin="65,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="65,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="65,197,0,0" VerticalAlignment="Top"/>
+        <Label Content="Confirm password" HorizontalAlignment="Left" Margin="65,228,0,0" VerticalAlignment="Top"/>
+        <Label Content="Registrasi" HorizontalAlignment="Left" Margin="191,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_PassConfirm" HorizontalAlignment="Left" Margin="191,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Pass" HorizontalAlignment="Left" Margin="191,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Margin="191,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_NamaAk" HorizontalAlignment="Left" Margin="191,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_NamaAw" HorizontalAlignment="Left" Margin="191,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Username" HorizontalAlignment="Left" Margin="191,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="231,297,0,0" VerticalAlignment="Top" ClickMode="Press"/>
 
     </Grid>
 </Window>
