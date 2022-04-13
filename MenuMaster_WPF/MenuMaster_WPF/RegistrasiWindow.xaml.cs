@@ -24,46 +24,82 @@ namespace MenuMaster_WPF
         {
             InitializeComponent();
         }
-
         private void txt_Username_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void txt_NamaAw_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void txt_NamaAk_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void txt_Email_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void txt_Pass_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void txt_PassConfirm_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         public void btn_Submit_Click(object sender, RoutedEventArgs e)
         {
-            txt_Username.Text = txt_Username.Text;
-            txt_NamaAw.Text = txt_NamaAw.Text;
-            txt_NamaAk.Text = txt_NamaAk.Text;
-            txt_Email.Text = txt_Email.Text;
-            txt_Pass.Text = txt_Pass.Text;
-            txt_PassConfirm.Text = txt_PassConfirm.Text;
-           
+            string Username     = Convert.ToString(txt_Username.Text);
+            string NamaAwal     = Convert.ToString(txt_NamaAw.Text);
+            string NamaAkhir    = Convert.ToString(txt_NamaAk.Text);
+            string Email        = Convert.ToString(txt_Email.Text);
+            string Pass         = Convert.ToString(txt_Pass.Text);
+            string PassConfirm  = Convert.ToString(txt_PassConfirm.Text);
+
+            Regis reg = new Regis();
+
+            reg.Write_JSON(Username, NamaAwal, NamaAkhir, Email, Pass);
+
+
         }
+        public class Regis
+        {
+            
+            public Account_Json Read_JSON()
+            {
+                JsonReadWrite RW = new JsonReadWrite();
+                return RW.ReadJson();
+            }
+            public void Write_JSON(TextBox txt_Username,TextBox txt_NamaAw, TextBox txt_NamaAk, TextBox txt_Email, TextBox txt_Pass)
+            {
+
+                var Win = new RegistrasiWindow();
+                string Username = txt_Username.Text;
+                string NamaAwal = txt_NamaAw.Text;
+                string NamaAkhir = txt_NamaAk.Text;
+                string Email = txt_Email.Text;
+                string Pass = txt_Pass.Text;
+
+                Account_Json account = new Account_Json()
+                {
+                    Username = Username,
+                    Nama_Awal = NamaAwal,
+                    Nama_Akhir = NamaAkhir,
+                    Email = Email,
+                    Password = Pass
+                };
+                JsonReadWrite RW = new JsonReadWrite();
+                RW.WriteJson(account);
+            }
+        }
+        
+        
     }
 }
