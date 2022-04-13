@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MenuMaster_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="298" Width="409">
-    <Grid Margin="0,0,10,-6">
+    <Grid Margin="0,0,10,-6" RenderTransformOrigin="0.553,0.458">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="61*"/>
             <ColumnDefinition Width="739*"/>
@@ -15,9 +15,9 @@
         <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="4,119,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="173,37,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Margin="133,90,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" Grid.Column="1" TextChanged="txtLogin_TextChanged"/>
-        <PasswordBox x:Name="passBox" HorizontalAlignment="Left" Margin="133,122,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="132,175,0,0" VerticalAlignment="Top" Grid.Column="1" Width="38"/>
-        <Button x:Name="btnRegistrasi" Grid.Column="1" Content="Registrasi" HorizontalAlignment="Left" Margin="214,175,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="132,175,0,0" VerticalAlignment="Top" Grid.Column="1" Width="38" Click="btnLogin_Click"/>
+        <Button x:Name="btnRegistrasi" Grid.Column="1" Content="Registrasi" HorizontalAlignment="Left" Margin="214,175,0,0" VerticalAlignment="Top" Click="btnRegistrasi_Click"/>
+        <PasswordBox x:Name="passBox" Grid.Column="1" HorizontalAlignment="Left" Margin="133,122,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

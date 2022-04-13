@@ -27,6 +27,21 @@ namespace MenuMaster_WPF
 
         private void txtLogin_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRegistrasi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void passBox_TextChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
