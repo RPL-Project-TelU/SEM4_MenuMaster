@@ -23,5 +23,32 @@ namespace MenuMaster_WPF
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Window_makanan Makanan = new Window_makanan();
+
+            Makanan.Show();
+            Close();
+        }
+
+        private void Minuman_Click(object sender, RoutedEventArgs e)
+        {
+            Window_Minum Minuman = new Window_Minum();
+
+            Minuman.Show();
+            Close();
+        }
+
+        private void History_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Favorite_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
