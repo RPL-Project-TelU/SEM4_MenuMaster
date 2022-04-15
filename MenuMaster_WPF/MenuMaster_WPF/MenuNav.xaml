@@ -14,10 +14,10 @@
             </Button.Background>
         </Button>
         <Label Content="Nama profil" HorizontalAlignment="Left" Margin="664,78,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Makanan" Content="Button" HorizontalAlignment="Left" Margin="56,91,0,0" VerticalAlignment="Top" Click="Makanan_Click"/>
-        <Button x:Name="Minuman" Content="Button" HorizontalAlignment="Left" Margin="101,91,0,0" VerticalAlignment="Top" Click="Minuman_Click"/>
-        <Button x:Name="History" Content="Button" HorizontalAlignment="Left" Margin="145,91,0,0" VerticalAlignment="Top" Click="History_Click"/>
-        <Button x:Name="Favorite" Content="Button" HorizontalAlignment="Left" Margin="190,91,0,0" VerticalAlignment="Top" Click="Favorite_Click"/>
+        <Button x:Name="Makanan" Content="Makanan" HorizontalAlignment="Left" Margin="56,91,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="Minuman" Content="Minuman" HorizontalAlignment="Left" Margin="114,91,0,0" VerticalAlignment="Top" Click="Minuman_Click"/>
+        <Button x:Name="History" Content="History" HorizontalAlignment="Left" Margin="177,91,0,0" VerticalAlignment="Top" Click="History_Click"/>
+        <Button x:Name="Favorite" Content="Favorite" HorizontalAlignment="Left" Margin="224,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.959,0.536" Click="Favorite_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="262" Margin="56,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="65"/>
         <Rectangle HorizontalAlignment="Left" Height="262" Margin="145,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="330"/>
         <Rectangle HorizontalAlignment="Left" Height="262" Margin="510,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="259"/>

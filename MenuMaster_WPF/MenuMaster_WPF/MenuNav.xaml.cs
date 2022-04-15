@@ -24,8 +24,9 @@ namespace MenuMaster_WPF
             InitializeComponent();
         }
 
-        private void Makanan_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             Window_makanan Makanan = new Window_makanan();
 
             Makanan.Show();
@@ -42,18 +43,12 @@ namespace MenuMaster_WPF
 
         private void History_Click(object sender, RoutedEventArgs e)
         {
-            Window_history History = new Window_history();
 
-            History.Show();
-            Close();
         }
 
         private void Favorite_Click(object sender, RoutedEventArgs e)
         {
-            Window_favorite Favorite = new Window_favorite();
 
-            Favorite.Show();
-            Close();
         }
     }
 }
